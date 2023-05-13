@@ -75,7 +75,7 @@ button:active {
 }
 
 /* Media queries */
-@media only screen and (min-width: 480px) and (max-width: 1023) {
+/* @media only screen and (max-width: 768px){
 #calculator {
     margin-top: 50px;
     height: 400px;
@@ -112,17 +112,23 @@ button {
     padding-right: 10px;
     margin: 20px;
 }
-} 
+}  */
 /* phone */
-@media only screen and (min-width: 200px) and (max-width: 479px) {
+@media only screen and (max-width: 200px){
+    body {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        height: 50px; 
+        background-image:url('./assets/background.png') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 #calculator {
     margin-top: 20px;
     height: 320px;
     width: 240px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 button {
